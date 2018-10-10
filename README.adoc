@@ -18,8 +18,7 @@
 // ============LICENSE_END=========================================================
 = Welcome to the Adaptive Policy eXecution Engine (APEX)
 
-[red]*** APEX has been moved to the Linux Foundation ONAP project ***
-
+[red]#*&#42;&#42;&#42; APEX has been moved to the Linux Foundation ONAP project &#42;&#42;&#42;*# +
 link:https://gerrit.onap.org/r/#/admin/projects/?filter=apex-pdp[The APEX source code is available in the ONAP APEX git repository].
 
 
