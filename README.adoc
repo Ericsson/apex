@@ -1,0 +1,79 @@
+//
+// ============LICENSE_START=======================================================
+//  Copyright (C) 2016-2018 Ericsson. All rights reserved.
+// ================================================================================
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+// 
+//      http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+// 
+// SPDX-License-Identifier: Apache-2.0
+// ============LICENSE_END=========================================================
+= Welcome to the Adaptive Policy eXecution Engine (APEX)
+
+APEX stand for Adaptive Policy EXecution.
+It is a lightweight engine for execution of policies.
+APEX allows you to specify logic as a policy, logic that you can adapt on the fly as your system executes.
+The APEX policies you design can be really simple, with a single snippet of logic, or can be very complex, with many states and tasks.
+APEX policies can even be designed to self-adapt at execution time, the choice is yours!
+
+
+== APEX engine
+
+The Adaptive Policy Engine in APEX runs your policies.
+These policies are triggered by incoming events.
+The logic of the policies executes and produces a response event.
+The Incoming Context on the incoming event and the Outgoing Context on the outgoing event are simply the fields and attributes of the event.
+You design the policies that APEX executes and the trigger and action events that your policies accept and produce.
+Events are fed in and sent out as JSON or XML events over Kafka, a Websocket, a file or named pipe, or even standard input.
+If you run APEX as a library in your application, you can even feed and receive events over a Java API.
+
+
+== Context for Policies
+
+In APEX, you also have control of the Context used by your policies.
+Context is simply the state information and data used by your policies.
+You define what context your policies use and what the scope of that context is.
+Policy Context is private to a particular policy and is accessible only to whatever APEX engines are running that particular policy.
+Global Context is available to all policies.
+External Context is read-only context such as weather or topology information that is provided by other systems.
+APEX keeps context coordinated across all the the instances running a particular policy. If a policy running in an APEX engine changes the value of a piece of context, that value is is available to all other APEX engines that use that piece of context.
+APEX takes care of distribution, locking, writing of context to persistent storage, and monitoring of context.
+
+
+== APEX main Components
+
+The APEX engine (AP-EN) is available as
+	a Java library for inclusion in your application,
+	as a microservice running in a Docker container, or
+	as a stand-alone service available for integration into your system.
+APEX also includes several policy editors (AP-AUTH) that allows you to design your policies and a web-based policy management console you use to deploy policies and to keep track of the state of policies and context in policies.
+Context handling (AP-CTX) is integrated into the APEX engine and policy deployment (AP-DEP) is provided as a servlet running under a web framework such as Apache Tomcat.
+
+
+== Documentation
+
+The full APEX documentation is available as link:https://ericsson.github.io/apex-docs[APEX site], generated from the code using the AsciiDoctor tool chain.
+Most documentation is available on the APEX site and as stand-alone HTML and PDF documents.
+
+Important guides and HowTo documents:
+
+* link:https://ericsson.github.io/apex-docs/user-manual.html[APEX User Manual]
+  ** link:https://ericsson.github.io/apex-docs/user-manual/install/um-install.html[Install Guide]
+  ** link:https://ericsson.github.io/apex-docs/user-manual/configuration/um-00-introduction.html[HowTo: Configure APEX engine]
+  ** An introduction to APEX policy authoring: link:https://ericsson.github.io/apex-docs/user-manual/my-first-policy/um-mfp-01-introduction.html[My First Policy]
+* link:https://ericsson.github.io/apex-docs/policy-guide.html[APEX Policy Guide]
+* link:https://ericsson.github.io/apex-docs/developer-guide.html[APEX Developers Guide]
+  ** link:https://ericsson.github.io/apex-docs/developer-guide/build/dg-build.html[HowTo: Build APEX]
+
+
+''''
+
+*The Ericsson NM Lab APEX team*
