@@ -24,6 +24,9 @@ APEX allows you to specify logic as a policy, logic that you can adapt on the fl
 The APEX policies you design can be really simple, with a single snippet of logic, or can be very complex, with many states and tasks.
 APEX policies can even be designed to self-adapt at execution time, the choice is yours!
 
+APEX has been moved to the Linux Foundation ONAP project. The APEX code can be
+* link:https://gerrit.onap.org/r/#/admin/projects/?filter=apex-pdp[downloaded from the ONAP APEX git repository].
+
 
 == APEX engine
 
