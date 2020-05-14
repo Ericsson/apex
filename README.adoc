@@ -20,7 +20,7 @@
 = Welcome to the Adaptive Policy eXecution Engine (APEX)
 
 [red]#*&#42;&#42;&#42; APEX has been moved to the Linux Foundation ONAP project &#42;&#42;&#42;*# +
-link:https://github.com/onap/policy-apex-pdp[The APEX source code is available in the ONAP APEX git repository].
+link:https://github.com/onap/policy-apex-pdp[The APEX source code is available in the ONAP APEX github repository].
 
 
 APEX stand for Adaptive Policy EXecution.
