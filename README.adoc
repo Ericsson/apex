@@ -1,7 +1,8 @@
 //
 // ============LICENSE_START=======================================================
 //  Copyright (C) 2016-2018 Ericsson. All rights reserved.
-// ================================================================================
+//  Modifications Copyright (C) 2020 Nordix Foundation.
+================================================================================
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -19,7 +20,7 @@
 = Welcome to the Adaptive Policy eXecution Engine (APEX)
 
 [red]#*&#42;&#42;&#42; APEX has been moved to the Linux Foundation ONAP project &#42;&#42;&#42;*# +
-link:https://gerrit.onap.org/r/#/admin/projects/?filter=apex-pdp[The APEX source code is available in the ONAP APEX git repository].
+link:https://github.com/onap/policy-apex-pdp[The APEX source code is available in the ONAP APEX git repository].
 
 
 APEX stand for Adaptive Policy EXecution.
@@ -63,20 +64,6 @@ Context handling (AP-CTX) is integrated into the APEX engine and policy deployme
 
 == Documentation
 
-The full APEX documentation is available as link:https://ericsson.github.io/apex-docs[APEX site], generated from the code using the AsciiDoctor tool chain.
-Most documentation is available on the APEX site and as stand-alone HTML and PDF documents.
-
-Important guides and HowTo documents:
-
-* link:https://ericsson.github.io/apex-docs/user-manual.html[APEX User Manual]
-  ** link:https://ericsson.github.io/apex-docs/user-manual/install/um-install.html[Install Guide]
-  ** link:https://ericsson.github.io/apex-docs/user-manual/configuration/um-00-introduction.html[HowTo: Configure APEX engine]
-  ** An introduction to APEX policy authoring: link:https://ericsson.github.io/apex-docs/user-manual/my-first-policy/um-mfp-01-introduction.html[My First Policy]
-* link:https://ericsson.github.io/apex-docs/policy-guide.html[APEX Policy Guide]
-* link:https://ericsson.github.io/apex-docs/developer-guide.html[APEX Developers Guide]
-  ** link:https://ericsson.github.io/apex-docs/developer-guide/build/dg-build.html[HowTo: Build APEX]
-
+The full APEX documentation is available at https://onap-doc.readthedocs.io/projects/onap-policy-parent/en/latest/apex/apex.html[ONAP readthedocs site].
 
 ''''
-
-*The Ericsson NM Lab APEX team*
